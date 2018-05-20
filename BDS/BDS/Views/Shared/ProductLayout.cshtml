@@ -1,0 +1,606 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Product</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="~/Content/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/font/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/Content/filter.css">
+
+</head>
+<body>
+    <div class="background" id="top">
+        <!-- First menu -->
+        <div class="first-menu desktop">
+            <div class="container">
+                <label><a href="~/Home/Index"><img src="../Image/house (1).png"> MyHouse</a></label>
+                <div class="item">
+                    <a href="dangtin.html">
+                        <i class="fa fa-upload" aria-hidden="true"></i>
+                        Đăng tin
+                    </a>
+                </div>
+                <div class="item"><a href="#" data-toggle="modal" data-target="#sign-in"><i class="fa fa-sign-in" aria-hidden="true"></i> Đăng nhập</a></div>
+                <div class="item"><a href="#" data-toggle="modal" data-target="#sign-up"><i class="fa fa-pencil" aria-hidden="true"></i> Đăng ký</a></div>
+            </div>
+        </div>
+
+        <div class="first-menu mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <label><a href="~/Home/Index">Myhouse</a></label>
+                    <div class="navbar-toggle">
+                        <i class="fa fa-bars" data-toggle="collapse" data-target="#first-menu"></i>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse" id="first-menu">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#sign-in">
+                                <span class="glyphicon glyphicon-log-in"></span> Đăng nhập
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#sign-up">
+                                <span class="glyphicon glyphicon-user"></span> Đăng ký
+                            </a>
+                        </li>
+                        <li><a href="dangtin.html">Đăng tin</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- HẾT First menu -->
+    </div>
+    <!-- HẾT Background -->
+    <div class="container-fluid" id="m" style="background:url(../Image/banner.jpg);height: 300px;
+      padding-top: 20px;background-size: cover;position: relative;background-attachment: fixed;">
+        <h3 style="text-align: center; color: white; padding-top: 90px; font-weight: normal; font-size: 30px">Điểm đến</h3>
+    </div>
+
+
+    <!--Phần tìm kiếm của điện thoại-->
+    <!--Phần tìm kiếm của điện thoại-->
+    <!--Phần tìm kiếm của điện thoại-->
+    <div class="search-box mobile">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <select>
+                        <option>Loại phòng</option>
+                        <option>Nhà riêng</option>
+                        <option>Văn phòng</option>
+                        <option>Chung cư</option>
+                    </select>
+                </div>
+                <div class="col-xs-12">
+                    <select>
+                        <option>Thành Phố</option>
+                        <option>Hà Nội</option>
+                        <option>Hồ Chí Minh</option>
+                        <option>Đà Nẵng</option>
+                        <option>Nha Trang</option>
+                    </select>
+                </div>
+                <div class="col-xs-12">
+                    <select>
+                        <option>Mức giá</option>
+                        <option>1 triệu</option>
+                        <option>2 triệu</option>
+                        <option>3 triệu</option>
+                        <option>5 - 10 triệu</option>
+                    </select>
+                </div>
+
+                <div id="nangcao" class="panel-collapse collapse">
+                    <div class="col-xs-12">
+                        <select>
+                            <option>Chọn Số phòng ngủ</option>
+                            <option>01 phòng ngủ</option>
+                            <option>02 phòng ngủ</option>
+                            <option>03 phòng ngủ</option>
+                            <option> >03 phòng ngủ</option>
+                        </select>
+                    </div>
+
+                    <div class="col-xs-12">
+                        <select>
+                            <option>Diện tích</option>
+                            <option>5-10m^2</option>
+                            <option>5-10m^2</option>
+                            <option>5-10m^2</option>
+                            <option>5-10m^2</option>
+                            <option>5-10m^2</option>
+                            <option>5-10m^2</option>
+                            <option>5-10m^2</option>
+                            <option>5-10m^2</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <a href="file3.1.html">
+                        <button type="submit">Tìm kiếm</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Hết Phần tìm kiếm của điện thoại-->
+    <!--Hết Phần tìm kiếm của điện thoại-->
+    <!--Hết Phần tìm kiếm của điện thoại-->
+    <!--Chỗ này viết cho điện thoại-->
+    <div class="container featured-cities mobile">
+
+    </div>
+
+
+    <!--Hết phần viết cho điện thoại-->
+    <!-- Bảng tìm kiếm desktop -->
+    <br>
+    <br>
+    <div class="search-box desktop">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2">
+                    <select>
+                        <option>Thành phố</option>
+                        <option>Hà Nội</option>
+                        <option>Hồ Chí Minh</option>
+                        <option>Huế</option>
+                        <option>Hạ Long</option>
+                        <option>Sa Pa</option>
+                        <option>Phú Quốc</option>
+                        <option>Đà Lạt</option>
+                    </select>
+                </div>
+
+                <div class="col-sm-2">
+                    <select>
+                        <option>Loại phòng</option>
+                        <option>Nhà riêng</option>
+                        <option>Văn phòng</option>
+                        <option>Chung cư</option>
+                    </select>
+                </div>
+                <div class="col-sm-2">
+                    <select>
+                        <option>Diện tích</option>
+                        <option>Tháng 1</option>
+                        <option>Tháng 2</option>
+                        <option>Tháng 3</option>
+                        <option>Tháng 4</option>
+                        <option>Tháng 5</option>
+                        <option>Tháng 6</option>
+                        <option>Tháng 7</option>
+                        <option>Tháng 8</option>
+                    </select>
+                </div>
+
+                <div class="col-sm-2">
+                    <select>
+                        <option>Mức giá</option>
+                        <option>01 khách</option>
+                        <option>02 khách</option>
+                        <option>03 khách</option>
+                        <option> >03 khách</option>
+                    </select>
+                </div>
+                <div class="col-sm-2">
+                    <select>
+                        <option>Số phòng</option>
+                        <option>01 phòng ngủ</option>
+                        <option>02 phòng ngủ</option>
+                        <option>03 phòng ngủ</option>
+                        <option>03 phòng ngủ</option>
+                    </select>
+                </div>
+                <div class="col-sm-2">
+                    <a href="file3.1.html" style="color: #fff;">
+                        <button type="submit">Tìm kiếm</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- HẾT Bảng tìm kiếm desktop -->
+    <!-- FILTER-DESKTOP -->
+    <div class="container filter desktop">
+        <!--BLOCK LEFT-->
+        <div class="block-left">
+            <div class="row" style="background-color: white">
+
+
+                @RenderBody()
+
+
+
+                <!--BLOCK RIGHT-->
+                <!-- Đánh số trang-->
+                <div style="text-align: center;">
+                    <ul class="pagination">
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- HẾT Đánh số trang-->
+            </div>
+            <!-- HẾT FILTER-DESKTOP -->
+            <!-- FILTER-MOBILE -->
+            <div class="container filter mobile">
+                <div class="header">Cho thuê nhà trọ, phòng trọ tại Hà Nội</div>
+
+                <div class="content">
+
+
+                    <div class="container">
+                        <div class="col-xs-6">
+                            <p class="gia">Giá: 3 triệu/tháng</p>
+                            <p class="dientich">Diện tích: 25m²</p>
+                            <p class="phongngu">Phòng ngủ: 01</p>
+                            <p class="tiennghi">Tiện nghi: Điều hòa, nóng lạnh</p>
+                            <p>Đối tượng: Nữ</p>
+                        </div>
+                        <div class="col-xs-6">
+                            <label class="status">Phòng trống</label>
+                            <label class="status closed">Đã cho thuê</label>
+                            <label class="status active">Share phòng</label>
+                            <i class="fa fa-users active">(1/2)</i>
+                            <div class="button">
+                                <label class="save active"><a href="page1.html" class="chitiet">Chi tiết</a></label>
+                                <input type="checkbox" id="save-page1-mobile" class="save-page1-mobile">
+                                <label class="save save-page1-mobile" for="save-page1-mobile">Lưu tin</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="title">
+                        <a href="page2.html">CHÍNH CHỦ CHO THUÊ CHUNG CƯ CAO CẤP ĐẦY ĐỦ ĐỒ, DT 50M2 TÒA NHÀ D2 PHỐ CẦU GIẤY</a>
+                    </div>
+                    <div class="date">Ngày đăng: 12/04/2017</div>
+                    <div class="anh">
+                        <img src="detail/page2/1.jpg">
+                    </div>
+                    <div class="container">
+                        <div class="col-xs-6">
+                            <p class="gia">Giá: 6 triệu/tháng</p>
+                            <p class="dientich">Diện tích: 50m²</p>
+                            <p class="phongngu">Phòng ngủ: 01</p>
+                            <p class="tiennghi">Tiện nghi: Điều hòa, nóng lạnh</p>
+                            <p>Đối tượng: Tất cả</p>
+                        </div>
+                        <div class="col-xs-6">
+                            <label class="status active">Phòng trống</label>
+                            <label class="status closed">Đã cho thuê</label>
+                            <label class="status active">Thuê chung</label>
+                            <i class="fa fa-users">(2/3)</i>
+                            <div class="button">
+                                <label class="save active"><a href="page2.html" class="chitiet">Chi tiết</a></label>
+                                <input type="checkbox" id="save-page2-mobile" class="save-page2-mobile">
+                                <label class="save save-page2-mobile" for="save-page2-mobile">Lưu tin</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="title">
+                        <a href="page3.html">
+                            CHO THUÊ CHUNG CƯ MINI 1 PHÒNG NGỦ, 1 P.KHÁCH DT45M2 GẦN ĐƯỜNG HÀM NGHI, HỒ TÙNG MẬU
+                            GIÁ 4.5TR/ THÁNG.
+                        </a>
+                    </div>
+                    <div class="date">Ngày đăng: 12/04/2017</div>
+                    <div class="anh">
+                        <img src="detail/page3/1.jpg">
+                    </div>
+                    <div class="container">
+                        <div class="col-xs-6">
+                            <p class="gia">Giá: 4.5 triệu/tháng</p>
+                            <p class="dientich">Diện tích: 45m²</p>
+                            <p class="phongngu">Phòng ngủ: 01</p>
+                            <p class="tiennghi">Tiện nghi: Điều hòa, nóng lạnh</p>
+                            <p>Đối tượng: Nữ</p>
+                        </div>
+                        <div class="col-xs-6">
+                            <label class="status active">Phòng trống</label>
+                            <label class="status closed">Đã cho thuê</label>
+                            <label class="status">Share phòng</label>
+                            <i class="fa fa-users">(2/3)</i>
+                            <div class="button">
+                                <label class="save active"><a href="page3.html" class="chitiet">Chi tiết</a></label>
+                                <input type="checkbox" id="save-page3-mobile" class="save-page3-mobile">
+                                <label class="save save-page3-mobile" for="save-page3-mobile">Lưu tin</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="title">
+                        <a href="page4.html">
+                            CHO THUÊ CĂN HỘ KHÉP KÍN 3,7TR.THÁNG TẠI SỐ NHÀ 15 NGÕ 62 ĐẶNG VĂN NGỮ ĐỐNG ĐA HÀ
+                            NỘI
+                        </a>
+                    </div>
+                    <div class="date">Ngày đăng: 12/04/2017</div>
+                    <div class="anh">
+                        <img src="detail/page4/1.jpg">
+                    </div>
+                    <div class="container">
+                        <div class="col-xs-6">
+                            <p class="gia">Giá: 3.7 triệu/tháng</p>
+                            <p class="dientich">Diện tích: 35m²</p>
+                            <p class="phongngu">Phòng ngủ: 01</p>
+                            <p class="tiennghi">Tiện nghi: Điều hòa, nóng lạnh</p>
+                            <p>Đối tượng: Tất cả</p>
+                        </div>
+                        <div class="col-xs-6">
+                            <label class="status">Phòng trống</label>
+                            <label class="status closed active">Đã cho thuê</label>
+                            <label class="status">Share phòng</label>
+                            <i class="fa fa-users">(2/3)</i>
+                            <div class="button">
+                                <label class="save active"><a href="page4.html" class="chitiet">Chi tiết</a></label>
+                                <input type="checkbox" id="save-page4-mobile" class="save-page4-mobile">
+                                <label class="save save-page4-mobile" for="save-page4-mobile">Lưu tin</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="title">
+                        <a href="page3.html">
+                            CHO THUÊ CHUNG CƯ MINI DT 45M2 ĐẦY ĐỦ TIỆN NGHI PHÒNG NGỦ VÀ PHÒNG KHÁCH GẦN PHỐ XÃ
+                            ĐÀN, TÔN THẤT TÙNG
+                        </a>
+                    </div>
+                    <div class="date">Ngày đăng: 11/04/2017</div>
+                    <div class="anh">
+                        <img src="detail/page5/1.jpg">
+                    </div>
+                    <div class="container">
+                        <div class="col-xs-6">
+                            <p class="gia">Giá: 5 triệu/tháng</p>
+                            <p class="dientich">Diện tích: 40m²</p>
+                            <p class="phongngu">Phòng ngủ: 01</p>
+                            <p class="tiennghi">Tiện nghi: Điều hòa, nóng lạnh</p>
+                            <p>Đối tượng: Tất cả</p>
+                        </div>
+                        <div class="col-xs-6">
+                            <label class="status">Phòng trống</label>
+                            <label class="status closed active">Đã cho thuê</label>
+                            <label class="status">Share phòng</label>
+                            <i class="fa fa-users">(2/3)</i>
+                            <div class="button">
+                                <label class="save active"><a href="page5.html" class="chitiet">Chi tiết</a></label>
+                                <input type="checkbox" id="save-page5-mobile" class="save-page5-mobile">
+                                <label class="save save-page5-mobile" for="save-page5-mobile">Lưu tin</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Đánh số trang-->
+                <div class="container sotrang">
+                    <div class="pagination">
+                        <a href="#">&laquo;</a>
+                        <a href="#">1</a>
+                        <a class="active" href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">&raquo;</a>
+                    </div>
+                </div>
+                <!-- HẾT Đánh số trang-->
+
+
+                <div class="search-box mobile">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <select>
+                                    <option>Loại phòng</option>
+                                    <option>Nhà riêng</option>
+                                    <option>Văn phòng</option>
+                                    <option>Chung cư</option>
+                                </select>
+                            </div>
+                            <div class="col-xs-12">
+                                <select>
+                                    <option>Thành Phố</option>
+                                    <option>Hà Nội</option>
+                                    <option>Hồ Chí Minh</option>
+                                    <option>Đà Nẵng</option>
+                                    <option>Nha Trang</option>
+                                </select>
+                            </div>
+                            <div class="col-xs-12">
+                                <select>
+                                    <option>Mức giá</option>
+                                    <option>1 triệu</option>
+                                    <option>2 triệu</option>
+                                    <option>3 triệu</option>
+                                    <option>5 - 10 triệu</option>
+                                </select>
+                            </div>
+
+                            <div id="nangcao" class="panel-collapse collapse">
+                                <div class="col-xs-12">
+                                    <select>
+                                        <option>Chọn Số phòng ngủ</option>
+                                        <option>01 phòng ngủ</option>
+                                        <option>02 phòng ngủ</option>
+                                        <option>03 phòng ngủ</option>
+                                        <option> >03 phòng ngủ</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-xs-12">
+                                    <select>
+                                        <option>Diện tích</option>
+                                        <option>5-10m^2</option>
+                                        <option>5-10m^2</option>
+                                        <option>5-10m^2</option>
+                                        <option>5-10m^2</option>
+                                        <option>5-10m^2</option>
+                                        <option>5-10m^2</option>
+                                        <option>5-10m^2</option>
+                                        <option>5-10m^2</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-xs-12">
+                                <a href="filter.html">
+                                    <button type="submit">Tìm kiếm</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- HẾT FILTER-MOBILE -->
+    <!-- PROMOTION -->
+    <!-- HẾT PROMOTION -->
+    <!-- Footer -->
+    <div class="noti" style="background-color: #ddd">
+        <div class="container footer">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h4>Thông tin công ty</h4>
+                    <h5>Văn hóa công ty</h5>
+                    <h5>Triết lý kinh doanh</h5>
+                    <h5>Tuyển dụng</h5>
+                </div>
+                <div class="col-sm-3">
+                    <div class="z">
+                        <h4>Chính sách và quy định</h4>
+                    </div>
+                    <h5>Hướng dẫn đăng tin</h5>
+                    <h5>Chính sách và quy định</h5>
+                    <h5>Câu hỏi thường gặp</h5>
+                </div>
+                <div class="col-sm-3">
+                    <div class="z">
+                        <h4>Liên hệ</h4>
+                    </div>
+                    <h5><i style="color:black" class="fa fa-map-marker" aria-hidden="true"></i> Địa chỉ: 107 Hoàng Mai, Hà Nội</h5>
+                    <h5><i style="color:black" class="fa fa-phone" aria-hidden="true"></i> Số điện thoại: 01254565478</h5>
+                    <h5><i style="color:black" class="fa fa-envelope" aria-hidden="true"></i> Email: myhome@gmail.com</h5>
+                </div>
+                <div class="col-sm-3">
+                    <h4>Thanh toán</h4>
+                    <img src="../Image/visa.png">
+                    <img src="../Image/mas.png">
+                    <img src="../Image/ame.png">
+                    <img src="../Image/Bitcoin1.png">
+                </div>
+            </div>
+        </div>
+        <div>
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up" aria-hidden="true" style="width: 7px"></i></button>
+        </div>
+        <div style="padding-bottom: 35px;text-align: center;padding-top:20px; ">
+            <i style="font-size: 25px;color: #286090" class="fa fa-facebook-square" aria-hidden="true"></i>
+            <i style="font-size: 25px;color: #286090" class="fa fa-google-plus-square" aria-hidden="true"></i>
+            <i style="font-size: 25px;color: #286090" class="fa fa-instagram" aria-hidden="true"></i>
+            <i style="font-size: 25px;color: #286090" class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </div>
+    </div>
+    <div class="col-sm-12" style="height: 10px;text-align: center;">
+        <h5 style="padding-top: 5px">Copyright 2017  Designed by HaiVu</h5>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="sign-up" role="dialog">
+        <div class="modal-dialog">
+            <div class="sign-up">
+                <h2>Đăng ký</h2>
+                <div class="sign-up-facebook">
+                    <i class="fa fa-facebook"></i>
+                    <span>Đăng ký bằng Facebook</span>
+                </div>
+                <div class="sign-up-google">
+                    <i class="fa fa-google" aria-hidden="true"></i>
+                    <span>Đăng ký bằng Google</span>
+                </div>
+                <p>Hoặc</p>
+                <form>
+                    <div>
+                        <input class="email" type="Email" placeholder="Email" name="email" required>
+                    </div>
+                    <div>
+                        <input class="password" id="password-signup" type="password" placeholder="Mật khẩu">
+                    </div>
+
+                    <div>
+                        <input class="hoten" type="text" placeholder="Họ và tên" name="name" required>
+                    </div>
+                    <div>
+                        <input class="sodienthoai" type="text" placeholder="Số điện thoại" name="mobile" required>
+                    </div>
+                    <div>
+                        <input class="submit" type="submit" value="Đăng ký" style="border: none;">
+                    </div>
+                    <p>Bằng cách nhấp vào Đăng ký, bạn đã đồng ý với các <a href="#">Quy định</a> của chúng tôi.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="sign-in" role="dialog">
+        <div class="modal-dialog">
+            <div class="sign-in">
+                <h2>Đăng nhập</h2>
+                <div class="sign-in-facebook">
+                    <i class="fa fa-facebook"></i>
+                    <span>Đăng nhập bằng Facebook</span>
+                </div>
+                <div class="sign-in-google" style="display: inline-block; width: 100%; padding: 1rem; margin-top: 1rem; margin-bottom: 1rem; background: rgba(214, 21, 21, 0.9); color: white;">
+                    <i class="fa fa-facebook"></i>
+                    <span>Đăng nhập bằng Google</span>
+                </div>
+                <p>Hoặc</p>
+                <form>
+                    <div>
+                        <input class="email" type="Email" placeholder="" name="email" value="vuhai8888v@gmail.com">
+                    </div>
+                    <div>
+                        <input class="password" type="password" placeholder="" name="pass" value="123456789">
+                    </div>
+                    <div style="text-align: left;">
+                        <input class="nho-mk" id="nho-mk" type="checkbox">
+                        <label for="nho-mk">Ghi nhớ mật khẩu</label>
+                    </div>
+                    <div>
+                        <input class="submit" type="submit" value="Đăng nhập" style="background-color: rgba(51, 122, 183, 0.88);border: none;">
+                    </div>
+                </form>
+                <p>Bạn chưa có tài khoản? <a href="#" class="taotaikhoan">Tạo tài khoản</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- HẾT Modal -->
+
+
+
+    <script src="~/Scripts/js/jquery-3.2.0.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <!-- <script src="js/filter.js"></script> -->
+    <script src="~/Scripts/js/script.js"></script>
+</body>
+</html>

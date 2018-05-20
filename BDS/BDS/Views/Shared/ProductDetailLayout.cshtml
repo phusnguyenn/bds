@@ -1,0 +1,700 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ProductDetails</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="~/Content/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/font/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/Content/detail.css">
+
+</head>
+<body>
+    <div class="background" id="top">
+        <!-- First menu -->
+        <div class="first-menu desktop">
+            <div class="container">
+                <label><a href="../Home/Index"><img src="../Image/house (1).png"> MyHouse</a></label>
+                <div class="item"><a href="dangtin.html"><i class="fa fa-upload" aria-hidden="true"></i> Đăng tin</a></div>
+                <div class="item"><a href="#" data-toggle="modal" data-target="#sign-in"><i class="fa fa-sign-in" aria-hidden="true"></i> Đăng nhập</a></div>
+                <div class="item"><a href="#" data-toggle="modal" data-target="#sign-up"><i class="fa fa-pencil" aria-hidden="true"></i> Đăng ký</a></div>
+            </div>
+        </div>
+        <div class="first-menu mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <label><a href="file3.html">Myhouse</a></label>
+                    <div class="navbar-toggle">
+                        <i class="fa fa-bars" data-toggle="collapse" data-target="#first-menu"></i>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse" id="first-menu">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#sign-in">
+                                <span class="glyphicon glyphicon-log-in"></span> Đăng nhập
+                            </a>
+                        </li>
+                        <li><a href="#" data-toggle="modal" data-target="#sign-up">Đăng ký</a></li>
+                        <li><a href="dangtin.html" style="background: #ffa239;">Đăng tin</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- HẾT First menu -->
+    </div>
+    <!-- HẾT Background -->
+
+
+    <div class="container-fluid" id="m" style="background:url(../Image/banner.jpg);height: 300px;
+    padding-top: 20px;background-size: cover;position: relative;background-attachment: fixed;">
+        <h3 style="text-align: center;color: white;padding-top: 90px;font-weight: 600px;font-size: 30px">Điểm đến</h3>
+    </div>
+
+    <!-- Bảng tìm kiếm desktop -->
+    <br>
+    <br>
+    <div class="search-box desktop">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2 tinhthanh">
+                    <select>
+                        <option>Thành phố</option>
+                        <option>Hà Nội</option>
+                        <option>Sài Gòn</option>
+                        <option>Đà Nẵng</option>
+                        <option>Nha Trang</option>
+                        <option>Huế</option>
+                        <option>Đà Lạt</option>
+                    </select>
+                </div>
+
+                <div class="col-sm-2 loaitin">
+                    <select>
+                        <option>Loại phòng</option>
+                        <option>Nhà riêng</option>
+                        <option>Văn phòng</option>
+                        <option>Chung cư</option>
+                    </select>
+                </div>
+                <div class="col-sm-2 quanhuyen">
+                    <select>
+                        <option>Diện tích</option>
+                        <option>50 m²</option>
+                        <option>150 m²</option>
+                        <option>250 m²</option>
+                        <option>350 m²</option>
+                    </select>
+                </div>
+                <div class="col-sm-2 sophongngu">
+                    <select>
+                        <option>Mức giá</option>
+                        <option>3 triệu</option>
+                        <option>5 triệu</option>
+                        <option>>5 triệu</option>
+
+                    </select>
+                </div>
+                <div class="col-sm-2 sophongngu">
+                    <select>
+                        <option>Số phòng</option>
+                        <option>01 phòng ngủ</option>
+                        <option>02 phòng ngủ</option>
+                        <option>03 phòng ngủ</option>
+                        <option>03 phòng ngủ</option>
+                    </select>
+                </div>
+
+                <div class="col-sm-2" style="background color: #337ab7">
+                    <a href="#" style="background color: #337ab7">
+                        <button type="submit">Tìm kiếm</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- HẾT Bảng tìm kiếm desktop -->
+    <!-- DETAIL-DESKTOP -->
+
+    <div class="container detail desktop" style="padding-top: 25px">
+        <!--BLOCK LEFT-->
+        @RenderBody();
+        @*<div class="block-left">
+                <div class="row header">
+                    <div class="col-sm-12">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            </ol>
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <img src="../Image/khach1.jpg">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="../Image/ngu1.jpg">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="../Image/tam1.jpg">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Controls -->
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="active"><a href="#home" role="tab" data-toggle="tab">Thông tin chung</a></li>
+                    <li><a href="#profile" role="tab" data-toggle="tab">Mô tả chi tiết</a></li>
+                    <li><a href="#messages" role="tab" data-toggle="tab">Tiện tích</a></li>
+                    <li><a href="#settings" role="tab" data-toggle="tab">Vị trí</a></li>
+                    <li><a href="#settings1" role="tab" data-toggle="tab">Ảnh 360</a></li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane active" id="home">
+                        <br>
+
+
+                        <table id="detail-item1" class="table table-bordered">
+                            <tbody>
+                                <tr>
+                                    <th>Địa chỉ</th>
+                                    <td colspan="3">Tòa P5 Park Hill, Mai Động, quận Hoàng Mai, Tp. Hà Nội.</td>
+                                </tr>
+                                <tr>
+                                    <th>Hình thức</th>
+                                    <td>Chung cư</td>
+                                    <th>Ngày đăng</th>
+                                    <td>20/05/2017</td>
+                                </tr>
+                                <tr>
+                                    <th>Người đăng</th>
+                                    <td>Vũ Minh</td>
+                                    <th>Điện thoại</th>
+                                    <td>01254578541</td>
+                                </tr>
+                                <tr>
+                                    <th>Email</th>
+                                    <td>vuminh@gmail.com</td>
+                                    <th>Tình trạng</th>
+                                    <td style="color: red">Phòng trống</td>
+                                </tr>
+                                <tr>
+                                    <th>Diện tích</th>
+                                    <td>150 m²</td>
+                                    <th>Giá cho thuê</th>
+                                    <td>18 triệu/tháng</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="tab-pane" id="profile">
+                        <br>
+                        <p style="color: blue">Cho thuê chung cư tại Tòa P5 Park Hill, Mai Động, quận Hoàng Mai, Tp. Hà Nội.<p>Nội Thất được trang bị đầy đủ đáp ứng sinh hoạt của khách hàng bao gồm: Tivi, tủ lạnh, máy giặt, lò vi sóng, giường, chăn, ga, gối, đệm, sofa, bàn ăn, điều hòa, đèn chùm, nước nóng trung tâm, sàn gỗ, khóa vân tay, chuông camera, bếp điện hồng ngoại, máy hút mùi, hệ thống tủ bếp, vách tắm đứng, bồn tắm, tủ quần áo âm tường...</p>
+                        <p>Thiết kế: 1 phòng ngủ, 1 vệ sinh, 1 phòng khách và bếp.</p>
+                        <p>Miễn phí dịch vụ quản lý căn hộ 10 năm.</p>
+                        <p>Tất cả giao dịch được ghi trên giấy tờ, hợp đồng minh bạch đảm bảo quyền lợi công bằng cho hai bên.</p>
+                        <p>Tiện ích, hạ tầng mang tiêu chuẩn quốc tế của toàn khu như: Hệ thống trường học chất lượng cao; Bệnh viên Đa khoa Quốc tế; Trung tâm thương mại; dịch vụ lễ tân, an ninh an toàn 24/7 cho đến hệ thống dịch vụ tại gia đẳng cấp như: dịch vụ dọn dẹp, giặt là, dịch vụ sửa chữa…</p>
+                    </div>
+                    <div class="tab-pane" id="messages">
+                        <div class="row tienich">
+                            <br>
+                            <div class="col-sm-4">
+                                <p><i class="fa fa-check-square-o" aria-hidden="true"></i> Phòng tập gym</p>
+                                <p><i class="fa fa-check-square-o" aria-hidden="true"></i> Thang máy</p>
+                                <p><i class="fa fa-check-square-o" aria-hidden="true"></i> Truyền hình cáp</p>
+                                <p><i class="fa fa-check-square-o" aria-hidden="true"></i> Siêu thị</p>
+                            </div>
+                            <div class="col-sm-4">
+                                <p><i class="fa fa-check-square-o" aria-hidden="true"></i> Internet</p>
+                                <p><i class="fa fa-check-square-o" aria-hidden="true"></i> Phòng khép kín</p>
+                                <p><i class="fa fa-check-square-o" aria-hidden="true"></i> Điều hòa</p>
+                                <p><i class="fa fa-check-square-o" aria-hidden="true"></i> Phòng ngủ</p>
+                            </div>
+                            <div class="col-sm-4">
+                                <p><i class="fa fa-check-square-o" aria-hidden="true"></i> Nóng lạnh</p>
+                                <p><i class="fa fa-check-square-o" aria-hidden="true"></i> Chỗ để xe</p>
+                                <p><i class="fa fa-check-square-o" aria-hidden="true"></i> Bảo vệ trực an ninh 24/24</p>
+                                <p><i class="fa fa-check-square-o" aria-hidden="true"></i> Phòng khách</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="settings">
+                        <br>
+                        <div id="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!
+                1d3723.8977453149246!2d105.83245751424809!3d21.036777085994046!
+                2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!
+                1s0x3135aba15ec15d17%3A0x620e85c2cfe14d4c!2zTMSDbmcgSOG7kyBDaMOtIE1pbmg!
+                5e0!3m2!1svi!2sus!4v1501056274257" width="775" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="settings1">
+                        <br>
+
+                        <iframe width="775" height="450" src="https://EyeSpy360.vr-360-tour.com/e/CwcBXpfqxcA/e?initvars.autorotate.enabled=true" allowfullscreen=""></iframe>
+
+
+                    </div>
+                </div>
+                <h3 style="padding-top: 30px">3 Bình Luận</h3>
+                <div style="padding-top: 20px">
+                    <div class="col-md-2"><img src="../Image/content-testimonials-2.png" style="width: 80px;height: 80px"></div>
+                    <div class="col-md-10">
+                        <span style="font-weight: 600px;font-size: 20px">Jessica Nguyễn</span>
+                        <p>Căn hộ đẹp quá, gửi cho tôi thông tin chi tiết về giá thuê căn hộ này nhé, tôi sẽ liên hệ lại với các bạn.</p>
+                        <a href="#"><p style="padding-top: 10px">Trả lời</p></a>
+                    </div>
+                </div>
+
+                <div class="col-sm-2"><img src="../Image/content-testimonials-1.png" style="width: 80px;height: 80px"></div>
+                <div class="col-sm-10">
+                    <p style="font-weight: 600px;font-size: 20px">John Doe</p>
+                    <p>Tôi đang cần thuê nhà gấp, gửi giúp tôi thông tin chi tiết về căn hộ này</p>
+                    <a href="#"><p style="padding-top: 10px">Trả lời</p></a>
+                </div>
+
+                <div class="col-md-2"><img src="../Image/content-testimonials-6.png" style="width: 80px;height: 80px"></div>
+                <div class="col-md-10">
+                    <p style="font-weight: 600px;font-size: 20px">Petter Pan</p>
+                    <p>Tôi đang cần thuê gấp một căn hộ gần trung tâm, liên lạc lại giúp tôi.</p>
+                    <a href="#"><p style="padding-top: 10px">Trả lời</p></a>
+                </div>
+
+                <div class="row content" style="margin-top: -30px">
+                    <div class="col-sm-12">
+                        <div class="noidung">
+                            <h4 class="title">Gửi bình luận</h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form">
+                            <input type="email" name="email" class="input-text" placeholder="Email của bạn">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form">
+                            <input type="email" name="email" class="input-text" placeholder="Tên của bạn">
+                        </div>
+                    </div>
+           
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <textarea class="form-control" rows="5" id="comment" placeholder="Đăng bình luận của bạn"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <button style="background-color: #2f7ec1;color: white">Bình luận</button>
+                    </div>
+
+                </div>
+            </div>*@
+
+        <!--BLOCK RIGHT-->
+        <div style="border: 1px solid #e4e4e4;" class="block-right">
+            <div class="search-box">
+                <h3 style="color: blue">Liên hệ với tư vấn viên</h3>
+
+                <div class="row">
+                    <div class="col">
+                        <img src="../Image/logoagents-3.jpg" class="img-responsive">
+                    </div>
+
+                    <p><i class="fa fa-user" aria-hidden="true"></i> Jessica Nguyễn</p>
+                    <p><i class="fa fa-phone" aria-hidden="true"></i> 01254565236</p>
+                    <p><i class="fa fa-envelope" aria-hidden="true"></i> nguyenjessica@gmail.com</p>
+
+
+                    <div class="col thanhpho">
+                        <div class="form">
+                            <input type="email" name="email" class="input-text" placeholder="Email của bạn">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col quanhuyen">
+                        <div class="form">
+                            <input type="email" name="email" class="input-text" placeholder="Số điện thoại của bạn">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col mucgia">
+                        <textarea class="form-control" rows="5" id="comment" placeholder="Để lại lời nhắn của bạn cho tư vấn viên"></textarea>
+                    </div>
+                    <br>
+                    <!-- Tính năng tìm kiếm nâng cao -->
+
+                    <div class="col">
+                        <button type="submit">Gửi tin nhắn</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- HẾT DETAIL-DESKTOP -->
+    <!-- DETAIL-MOBILE -->
+    <div class="container detail mobile">
+
+        <div class="search-box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 loaitin">
+                        <select>
+                            <option>Thành phố</option>
+                            <option>Hà Nội</option>
+                            <option>Hồ Chí Minh</option>
+                            <option>Đà Nẵng</option>
+                            <option>Nha Trang</option>
+                            <option>Vũng Tàu</option>
+                            <option>Phan Thiết</option>
+                            <option>Hội An</option>
+                            <option>Huế</option>
+                            <option>Hạ Long</option>
+                        </select>
+                    </div>
+                    <div class="col-xs-12 tinhthanh">
+                        <select>
+                            <option>Loại Phòng</option>
+                            <option>Nhà riêng</option>
+                            <option>Chung cư</option>
+                            <option>Villa</option>
+                        </select>
+                    </div>
+                    <div class="col-xs-12 quanhuyen">
+                        <select>
+                            <option>Diện tích</option>
+                            <option>50 m2</option>
+                            <option>100 m2</option>
+                            <option>150 m2</option>
+                            <option>250 m2</option>
+                        </select>
+                    </div>
+                    <div class="col-xs-12 mucgia">
+                        <select>
+                            <option>Mức giá</option>
+                            <option>3 triệu</option>
+                            <option>3 -5 triệu</option>
+                            <option>> 5 triệu</option>
+
+
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container featured-cities mobile">
+        <div class="col-xs-12">
+            <h3>Liên hệ tư vấn viên</h3>
+        </div>
+
+        <div class="col-xs-12">
+            <img src="../Image/logoagents-3.jpg" class="img-responsive">
+        </div>
+
+        <div class="col-xs-12">
+            <div class="col loaitin">
+                <p><i class="fa fa-user" aria-hidden="true"></i> Nguyễn cẩm tú</p>
+                <p><i class="fa fa-phone" aria-hidden="true"></i> 01254565236</p>
+                <p><i class="fa fa-envelope" aria-hidden="true"></i> nguyencamtu@gmail.com</p>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <img src="../Image/khach/khach1.jpg" class="img-responsive">
+        </div>
+        <div class="col-xs-12">
+            <div class="col thanhpho">
+                <div class="form">
+                    <input type="email" name="email" class="input-text" placeholder="Email của bạn">
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <div class="col quanhuyen">
+                <div class="form">
+                    <input type="email" name="email" class="input-text" placeholder="Số điện thoại của bạn">
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <div class="col mucgia">
+                <textarea class="form-control" rows="5" id="comment" placeholder="Để lại lời nhắn của bạn cho chúng tôi"></textarea>
+            </div>
+        </div>
+
+        <div class="col-xs-12">
+            <div class="col">
+                <button type="submit">Gửi tin nhắn</button>
+            </div>
+        </div>
+
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contacta" role="tab" aria-controls="contact" aria-selected="false">Thông tin chung</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contactb" role="tab" aria-controls="contact" aria-selected="false">Mô tả chi tiết</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contactc" role="tab" aria-controls="contact" aria-selected="false">Tiện tích</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contactd" role="tab" aria-controls="contact" aria-selected="false">Vị trí</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade" id="contacta" role="tabpanel" aria-labelledby="contact-taba">
+                <table id="detail-item1" class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <td>Địa chỉ</td>
+                            <td colspan="3">Số 3/108 Nguyễn Trãi, Thượng Đình, Thanh Xuân, Hà Nội</td>
+                        </tr>
+                        <tr>
+                            <th>Hình thức</th>
+                            <td>Chung cư</td>
+                            <th>Ngày đăng</th>
+                            <td>20/05/2017</td>
+                        </tr>
+                        <tr>
+                            <th>Người đăng</th>
+                            <td>Vũ Hải</td>
+                            <th>Điện thoại</th>
+                            <td>01254578541</td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td>vuhai12@gmail.com</td>
+                            <th>Tình trạng</th>
+                            <td>Phòng trống</td>
+                        </tr>
+                        <tr>
+                            <th>Diện tích</th>
+                            <td>40m2</td>
+                            <th>Giá cho thuê</th>
+                            <td>3 triệu/tháng</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tab-pane fade" id="contactb" role="tabpanel" aria-labelledby="contact-tabb">
+                <p>Cho thuê phòng trọ tại 95 Tân Phong, Thụy Phương, Bắc Từ Liêm, Hà Nội. Nhà 4 tầng 7 phòng mới xây xong. Diện tích 25m2, phòng khép kín, nội thất đủ. Vị trí mặt đường thuận lợi đi lại, gần trường ĐH Tài Chính, trường ĐH Y Tế Công Cộng, chợ, trạm y tế, an ninh tốt, khu dân trí cao.</p>
+                <p>
+                    Cho thuê căn liền kề ParkCity Hanoi full nội thất cao cấp: Điều hòa Daikin, tủ bếp, sàn gỗ, thiết bị vệ sinh, bếp từ, hút mùi, nóng lạnh..
+                    trong Tiều khu Evelyne Gardens
+                    Tiểu khu nằm trong khuôn viên có khu dịch vụ tiện ích 5 sao với bể bơi bốn mùa rộng 750m2, bể bơi ngoài trời..... (như ảnh đính kèm)
+                    Khu vực được bảo vệ 24/24 bởi đội ngũ an ninh kinh nghiệm cùng hệ thống camera quanh khu, là nơi đáng sống cho hộ gia đình hay người nước ngoài.
+                </p>
+            </div>
+            <div class="tab-pane fade" id="contactc" role="tabpanel" aria-labelledby="contact-tabc">
+                <div class="col-sm-4">
+                    <p><i class="fa fa-check-square-o" aria-hidden="true"></i> Ngõ rộng</p>
+                    <p><i class="fa fa-check-square-o" aria-hidden="true"></i> Thang máy</p>
+                    <p><i class="fa fa-check-square-o" aria-hidden="true"></i> Truyền hình cáp</p>
+                </div>
+                <div class="col-sm-4">
+                    <p><i class="fa fa-check-square-o" aria-hidden="true"></i> Internet</p>
+                    <p><i class="fa fa-check-square-o" aria-hidden="true"></i> Phòng khép kín</p>
+                    <p><i class="fa fa-check-square-o" aria-hidden="true"></i> Điều hòa</p>
+                </div>
+                <div class="col-sm-4">
+                    <p><i class="fa fa-check-square-o" aria-hidden="true"></i> Nóng lạnh</p>
+                    <p><i class="fa fa-check-square-o" aria-hidden="true"></i> Chỗ để xe</p>
+                    <p><i class="fa fa-check-square-o" aria-hidden="true"></i> Bảo vệ trực an ninh 24/24</p>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="contactd" role="tabpanel" aria-labelledby="contact-tabd">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!
+                1d3723.8977453149246!2d105.83245751424809!3d21.036777085994046!
+                2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!
+                1s0x3135aba15ec15d17%3A0x620e85c2cfe14d4c!2zTMSDbmcgSOG7kyBDaMOtIE1pbmg!
+                5e0!3m2!1svi!2sus!4v1501056274257" width="100%" height="290" frameborder="0" style="border:0; text-align: center;" allowfullscreen></iframe>
+            </div>
+            <div class="tab-pane fade" id="contacte" role="tabpanel" aria-labelledby="contact-tabe">fr</div>
+
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <textarea class="form-control" rows="5" id="comment" placeholder="Đăng bình luận của bạn"></textarea>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <button>Bình luận</button>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="container" style="padding-bottom: 30px">
+        <h3> Bài đăng tương tự</h3>
+        <div class="col-sm-3">
+            <img src="../Image/baidang1.jpg" class="img-responsive" style="border-radius: 5px">
+            <h4 style="text-align: left;">107 Chung cư time city, Nguyễn Trãi, Hà Nội</h4>
+            <p style="text-align: left;margin-top: -10px">Giá thuê: 3 triệu một tháng</p>
+            <div style="text-align: left;margin-top: -10px"><i style="color: #31708f;padding-right: 0px" class="fa fa-star" aria-hidden="true"></i><i style="color: #31708f;padding-right: 0px" class="fa fa-star" aria-hidden="true"></i><i style="color: #31708f;padding-right: 0px" class="fa fa-star" aria-hidden="true"></i>3</div>
+        </div>
+        <div class="col-sm-3">
+            <img src="../Image/baidang2.jpg" class="img-responsive" style="border-radius: 5px">
+            <h4 style="text-align: left;">107 Chung cư time city, Nguyễn Trãi, Hà Nội</h4>
+            <p style="text-align: left;margin-top: -10px">Giá thuê: 3 triệu một tháng</p>
+            <div style="text-align: left;margin-top: -10px"><i style="color: #31708f;padding-right: 0px" class="fa fa-star" aria-hidden="true"></i><i style="color: #31708f;padding-right: 0px" class="fa fa-star" aria-hidden="true"></i><i style="color: #31708f;padding-right: 0px" class="fa fa-star" aria-hidden="true"></i>3</div>
+        </div>
+        <div class="col-sm-3">
+            <img src="../Image/baidang3.jpg" class="img-responsive" style="border-radius: 5px">
+            <h4 style="text-align: left;">107 Chung cư time city, Nguyễn Trãi, Hà Nội</h4>
+            <p style="text-align: left;margin-top: -10px">Giá thuê: 3 triệu một tháng</p>
+            <div style="text-align: left;margin-top: -10px"><i style="color: #31708f;padding-right: 0px" class="fa fa-star" aria-hidden="true"></i><i style="color: #31708f;padding-right: 0px" class="fa fa-star" aria-hidden="true"></i><i style="color: #31708f;padding-right: 0px" class="fa fa-star" aria-hidden="true"></i>3</div>
+        </div>
+        <div class="col-sm-3">
+            <img src="../Image/baidang4.jpg" class="img-responsive" style="border-radius: 5px">
+            <h4 style="text-align: left;">107 Chung cư time city, Nguyễn Trãi, Hà Nội</h4>
+            <p style="text-align: left;margin-top: -10px">Giá thuê: 3 triệu một tháng</p>
+            <div style="text-align: left;margin-top: -10px"><i style="color: #31708f;padding-right: 0px" class="fa fa-star" aria-hidden="true"></i><i style="color: #31708f;padding-right: 0px" class="fa fa-star" aria-hidden="true"></i><i style="color: #31708f;padding-right: 0px" class="fa fa-star" aria-hidden="true"></i>3</div>
+        </div>
+    </div>
+    <!-- HẾT DETAIL-MOBILE -->
+    <!-- PROMOTION -->
+    <!-- HẾT PROMOTION -->
+    <!-- Footer -->
+    <div class="noti">
+        <div class="container footer">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h4>Thông tin công ty</h4>
+                    <p>Văn hóa công ty</p>
+                    <p>Triết lý kinh doanh</p>
+                    <p>Tuyển dụng</p>
+                </div>
+                <div class="col-sm-3">
+                    <div class="z">
+                        <h4 style="font-size: 20px">Chính sách và quy định</h4>
+                    </div>
+                    <p>Hướng dẫn đăng tin</p>
+                    <p>Chính sách và quy định</p>
+                    <p>Câu hỏi thường gặp</p>
+                </div>
+                <div class="col-sm-3">
+                    <div class="z">
+                        <h4 style="font-size: 20px">Liên hệ</h4>
+                    </div>
+                    <p><i style="color:black" class="fa fa-map-marker" aria-hidden="true"></i> Địa chỉ: 107 Hoàng Mai, Hà Nội</p>
+                    <p><i style="color:black" class="fa fa-phone" aria-hidden="true"></i> Số điện thoại: 01254565478</p>
+                    <p><i style="color:black" class="fa fa-envelope" aria-hidden="true"></i> Email: myhome@gmail.com</p>
+                </div>
+                <div class="col-sm-3">
+                    <div class="z">
+                        <h4 style="font-size: 20px">Thanh toán</h4>
+                    </div>
+                    <img src="../Image/visa.png">
+                    <img src="../Image/mas.png">
+                    <img src="../Image/ame.png">
+                    <img src="../Image/Bitcoin1.png">
+                </div>
+            </div>
+
+        </div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">
+            <i class="fa fa-angle-double-up" aria-hidden="true" style="width: 7px"></i>
+        </button>
+        <div style="padding-bottom: 25px;text-align: center;padding-top: 10px">
+            <i style="font-size: 25px;padding-right: 5px; color: rgb(40, 96, 144)" class="fa fa-facebook-square" aria-hidden="true"></i>
+            <i style="font-size: 25px;padding-right: 5px; color: rgb(40, 96, 144)" class="fa fa-google-plus-square" aria-hidden="true"></i>
+            <i style="font-size: 25px;padding-right: 5px; color: rgb(40, 96, 144)" class="fa fa-instagram" aria-hidden="true"></i>
+            <i style="font-size: 25px; color: rgb(40, 96, 144)" class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </div>
+    </div>
+    <div class="col-sm-12" style="height: 10px;text-align: center;">
+        <h5 style="padding-top: 5px">Copyright 2017  Designed by Vuhai</h5>
+    </div>
+    <!-- HẾT Footer -->
+    <!-- Back to top -->
+    <!-- HẾT Back to top -->
+    <!-- Modal -->
+    <div class="modal fade" id="sign-up" role="dialog">
+        <div class="modal-dialog">
+            <div class="sign-up">
+                <h2>Đăng ký</h2>
+                <div class="sign-up-facebook">
+                    <i class="fa fa-facebook"></i>
+                    <span>Đăng ký bằng Facebook</span>
+                </div>
+                <div class="sign-up-google">
+                    <i class="fa fa-google" aria-hidden="true"></i>
+                    <span>Đăng ký bằng Google</span>
+                </div>
+                <p>Hoặc</p>
+                <form>
+                    <div>
+                        <input class="email" type="Email" placeholder="Email" name="email" required>
+                    </div>
+                    <div>
+                        <input class="password" id="password-signup" type="password" placeholder="Mật khẩu">
+                    </div>
+
+                    <div>
+                        <input class="hoten" type="text" placeholder="Họ và tên" name="name" required>
+                    </div>
+                    <div>
+                        <input class="sodienthoai" type="text" placeholder="Số điện thoại" name="mobile" required>
+                    </div>
+                    <div>
+                        <input class="submit" type="submit" value="Đăng ký" style="background-color: rgba(51, 122, 183, 0.88)">
+                    </div>
+                    <p>Bằng cách nhấp vào Đăng ký, bạn đã đồng ý với các <a href="#">Quy định</a> của chúng tôi.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="sign-in" role="dialog">
+        <div class="modal-dialog">
+            <div class="sign-in">
+                <h2>Đăng nhập</h2>
+                <div class="sign-in-facebook">
+                    <i class="fa fa-facebook"></i>
+                    <span>Đăng nhập bằng Facebook</span>
+                </div>
+                <div class="sign-in-google">
+                    <i class="fa fa-facebook"></i>
+                    <span>Đăng nhập bằng Google</span>
+                </div>
+                <p>Hoặc</p>
+                <form>
+                    <div>
+                        <input class="email" type="Email" placeholder="" name="email" value="vuhai8888v@gmail.com">
+                    </div>
+                    <div>
+                        <input class="password" type="password" placeholder="" name="pass" value="123456789">
+                    </div>
+                    <div style="text-align: left;">
+                        <input class="nho-mk" id="nho-mk" type="checkbox" style="width: 13px;height: 13px">
+                        <label for="nho-mk">Ghi nhớ mật khẩu</label>
+                    </div>
+                    <div>
+                        <input class="submit" type="submit" value="Đăng nhập" style="background-color:rgba(51, 122, 183, 0.88) ">
+                    </div>
+                </form>
+                <p>Bạn chưa có tài khoản? <a href="#" class="taotaikhoan">Tạo tài khoản</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- HẾT Modal -->
+    <script src="~/Scripts/js/jquery-3.2.0.min.js"></script>
+    <script src="~/Scripts/js/bootstrap.min.js"></script>
+    <script src="~/Scripts/js/detail.js"></script>
+    <script src="~/Scripts/js/script.js"></script>
+</body>
+</html>

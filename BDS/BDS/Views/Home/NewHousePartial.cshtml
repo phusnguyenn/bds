@@ -1,0 +1,16 @@
+﻿@using BDS.Models;
+@model List<House>
+@foreach (var item in Model)
+{
+    <div class="col-sm-3 hanoi" style="text-align: center;">
+        <a href="@Url.Action("ProductDetail", "Home", new { @houseId = item.HouseId })">
+            <div class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
+                <img src="~/Image/baidang1.jpg" style="border-radius: 5px" class="img-responsive">
+                <h4 style="text-align: left;color: black">Địa chỉ: @item.Address</h4>
+                <p style="text-align: left;margin-top: -10px">Giá thuê: @String.Format("{0:0,0}", item.Price) đ/1 tháng</p>
+                <div style="text-align: left;margin-top: -10px"><i style="color: #31708f;padding-right: 0px" class="fa fa-star" aria-hidden="true"></i><i style="color: #31708f;padding-right: 0px" class="fa fa-star" aria-hidden="true"></i><i style="color: #31708f;padding-right: 0px" class="fa fa-star" aria-hidden="true"></i><i style="color: #31708f;padding-right: 0px" class="fa fa-star" aria-hidden="true"></i><i style="color: #31708f;padding-right: 0px" class="fa fa-star" aria-hidden="true"></i><i style="color: #31708f;padding-right: 0px" class="fa fa-star" aria-hidden="true"></i><span style="color: grey">6</span></div>
+            </div>
+        </a>
+    </div>
+}
+

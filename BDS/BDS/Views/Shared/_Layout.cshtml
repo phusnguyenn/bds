@@ -1,0 +1,622 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="~/Content/font/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/font/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/Content/style.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/animate.css">
+    <title>MyHome.vn</title>
+
+</head>
+<body>
+    <div class="background" id="top">
+        <div class="first-menu desktop">
+            <div class="container">
+                <label><a href="../Home/Index"><img src="~/Image/house (1).png"> MyHouse</a></label>
+                <div class="item"><a href="dangtin.html"><i class="fa fa-upload" aria-hidden="true"></i>Đăng tin</a></div>
+                <div class="item" id="top1"><a href="#" data-toggle="modal" data-target="#sign-in"><i class="fa fa-sign-in" aria-hidden="true"></i> Đăng nhập</a></div>
+                <div class="item"><a href="#" data-toggle="modal" data-target="#sign-up"><i class="fa fa-pencil" aria-hidden="true"></i> Đăng ký</a></div>
+            </div>
+        </div>
+
+
+        <!--Menu của điện thoại-->
+        <!--Menu của điện thoại-->
+        <!--Menu của điện thoại-->
+        <div class="first-menu mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div class="navbar-toggle">
+                        <i class="fa fa-bars" data-toggle="collapse" data-target="#first-menu"></i>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse" id="first-menu">
+                    <ul class="nav navbar-nav">
+                        <li><a href="dangtin.html"><i class="fa fa-upload" aria-hidden="true"></i>Đăng tin</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#sign-in"><i class="fa fa-sign-in" aria-hidden="true"></i>Đăng nhập</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#sign-up"><i class="fa fa-pencil" aria-hidden="true"></i>Đăng ký</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--Hết Menu của điện thoại-->
+        <!--Hết Menu của điện thoại-->
+        <!--Hết Menu của điện thoại-->
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="search-box desktop">
+            <div class="container">
+                <h1 class="wow zoomInUp;wow zoomInRight" data-wow-duration="1s" data-wow-delay="0.2s">Tìm kiếm địa điểm tốt nhất của bạn</h1>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <select>
+                            <option>Thành Phố</option>
+                            <option>Hà Nội</option>
+                            <option>Hồ Chí Minh</option>
+                            <option>Đà Nẵng</option>
+                            <option>Nha Trang</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-2">
+                        <select>
+                            <option>Loại Phòng</option>
+                            <option>Chung cư</option>
+                            <option>Nhà riêng</option>
+                            <option>Villa</option>
+
+                        </select>
+                    </div>
+
+                    <div class="col-sm-2">
+                        <select>
+                            <option>Diện tích</option>
+                            <option>50 m²</option>
+                            <option>150 m²</option>
+                            <option>250 m²</option>
+                            <option>350 m²</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-2">
+                        <select>
+                            <option>Mức giá</option>
+                            <option>1 triệu</option>
+                            <option>2 triệu</option>
+                            <option>3 triệu</option>
+                            <option>5 - 10 triệu</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-2">
+                        <select>
+                            <option>Số phòng</option>
+                            <option>01 phòng ngủ</option>
+                            <option>02 phòng ngủ</option>
+                            <option>03 phòng ngủ</option>
+                            <option>03 phòng ngủ</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-2">
+                        <a href="../Home/Product" style="color: #fff;">
+                            <button type="submit">Tìm kiếm</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Phần tìm kiếm của điện thoại-->
+    <!--Phần tìm kiếm của điện thoại-->
+    <!--Phần tìm kiếm của điện thoại-->
+    <div class="search-box mobile">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <select>
+                        <option>Thành Phố</option>
+                        <option>Hà Nội</option>
+                        <option>Hồ Chí Minh</option>
+                        <option>Đà Nẵng</option>
+                        <option>Nha Trang</option>
+                    </select>
+                </div>
+                <div class="col-xs-12">
+                    <select>
+                        <option>Diện tích</option>
+                        <option>50 m²</option>
+                        <option>150 m²</option>
+                        <option>250 m²</option>
+                        <option>350 m²</option>
+                    </select>
+                </div>
+                <div class="col-xs-12">
+                    <select>
+                        <option>Mức giá</option>
+                        <option>1 triệu</option>
+                        <option>2 triệu</option>
+                        <option>3 triệu</option>
+                        <option>5 - 10 triệu</option>
+                    </select>
+                </div>
+                <div class="col-xs-12">
+                    <select>
+                        <option>Số phòng</option>
+                        <option>01 phòng ngủ</option>
+                        <option>02 phòng ngủ</option>
+                        <option>03 phòng ngủ</option>
+                        <option>03 phòng ngủ</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Hết Phần tìm kiếm của điện thoại-->
+    <!--Hết Phần tìm kiếm của điện thoại-->
+    <!--Hết Phần tìm kiếm của điện thoại-->
+    <div class="noti1">
+        <div class="notice desktop">
+            <div class="container featured-cities desktop">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <a href="#">
+                            <div class="wow wow zoomInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+                                <img src="~/Image/free.png" style="border-radius: 5px " class="img-responsive">
+                            </div>
+                            <h3 class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">Hoàn toàn miễn phí</h3>
+                            <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+                                Miễn phí hoàn toàn
+                                khi bạn đăng tin cho thuê nhà trên Myhouse. Chúng tôi chỉ thu một khoản phí dịch vụ là 3% trên mỗi vụ giao dịch thành công.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="col-sm-3">
+                        <a href="#">
+                            <div class="wow wow zoomInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+                                <img src="~/Image/antoan.png" style="border-radius: 5px" class="img-responsive">
+                            </div>
+                            <h3 class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">An toàn tuyệt đối</h3>
+                            <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">Với hệ thống chi trả thanh toán trực tuyến an toàn và nhanh chóng chúng tôi đảm bảo trách nhiệm trong việc thanh toán của bạn.</p>
+                        </a>
+                    </div>
+                    <div class="col-sm-3">
+                        <a href="#">
+                            <div class="wow wow zoomInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+                                <img src="~/Image/qb.png" style="border-radius: 5px" class="img-responsive">
+                            </div>
+                            <h3 class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">Diện tích quảng bá lớn</h3>
+                            <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">Chúng tôi quảng bá bài đăng của bạn trên nhiều kênh khác nhau như google, facebook, twitter và các đối tác của chúng tôi.</p>
+                        </a>
+                    </div>
+                    <div class="col-sm-3">
+                        <a href="#">
+                            <div class="wow wow zoomInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+                                <img src="~/Image/hotro.png" style="border-radius: 5px" class="img-responsive">
+                            </div>
+                            <h3 class="wow wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">Chúng tôi sẵn sàng hỗ trợ</h3>
+                            <p class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">Đội ngũ chăm sóc khách hàng thân thiện, nhiệt tình và chuyên nghiệp của chúng tôi sẵn sàng hỗ trợ bạn mỗi khi bạn cần.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    @RenderBody();
+    <!--Chỗ này viết cho điện thoại-->
+    <!--Chỗ này viết cho điện thoại-->
+    <!--Chỗ này viết cho điện thoại-->
+    <!--Chỗ này viết cho điện thoại-->
+    <!--Chỗ này viết cho điện thoại-->
+    <div class="container featured-cities mobile">
+        <div class="row" style="background-color: white">
+            <div class="col-xs-12">
+                <a href="#">
+                    <img src="~/Image/free.png" style="border-radius: 5px " class="img-responsive">
+                    <h3>Hoàn toàn miễn phí</h3>
+                    <p>
+                        Miễn phí hoàn toàn
+                        khi bạn đăng tin cho thuê nhà trên home.vn. Chúng tôi chỉ thu một khoản phí dịch vụ là 30% trên mỗi vụ giao dịch thành công.
+                    </p>
+                </a>
+            </div>
+            <div class="col-xs-12">
+                <a href="#">
+                    <img src="~/Image/antoan.png" style="border-radius: 5px" class="img-responsive">
+                    <h3>An toàn tuyệt đối</h3>
+                    <p>Với hệ thống chi trả thanh toán trực tuyến, chúng tôi đảm bảo trách nhiệm trong việc thanh toán của bạn.</p>
+                </a>
+            </div>
+            <div class="col-xs-12">
+                <a href="#">
+                    <img src="~/Image/qb.png" style="border-radius: 5px" class="img-responsive">
+                    <h3>Diện tích quảng bá lớn</h3>
+                    <p>Chúng tôi quảng bá bài đăng của bạn trên nhiều kênh khác nhau như google, facebook và các đối tác của chúng tôi.</p>
+                </a>
+            </div>
+            <div class="col-xs-12">
+                <a href="#">
+                    <img src="~/Image/hotro.png" style="border-radius: 5px" class="img-responsive">
+                    <h3>Chúng tôi sẵn sàng hỗ trợ</h3>
+                    <p>Đội ngũ chăm sóc khách hàng thân thiện của chúng tôi sẵn sàng hỗ trợ bạn.</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container featured-cities mobile">
+        <div class="row">
+            <div class="col-xs-12">
+                <a href="#">
+                    <img src="~/Image/hcm.jpg" style="border-radius: 5px" class="img-responsive">
+                    <p class="p1"><span>Sài Gòn</span></p>
+                </a>
+            </div>
+            <div class="col-xs-12">
+                <a href="#">
+                    <img src="~/Image/danang.jpg" style="border-radius: 5px" class="img-responsive">
+                    <p class="p1"><span>Đà Nẵng</span></p>
+                </a>
+            </div>
+            <div class="col-xs-12">
+                <a href="#">
+                    <img src="~/Image/hcm.jpg" style="border-radius: 5px" class="img-responsive">
+                    <p class="p1"><span>Sài Gòn</span></p>
+                </a>
+            </div>
+            <div class="col-xs-12">
+                <a href="#">
+                    <img src="~/Image/hue.jpg" style="border-radius: 5px" class="img-responsive">
+                    <p class="p1"><span>Huế</span></p>
+                </a>
+            </div>
+            <div class="col-xs-12">
+                <a href="#">
+                    <img src="~/Image/nhatrang.jpg" style="border-radius: 5px" class="img-responsive">
+                    <p class="p1"><span>Nha Trang</span></p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container featured-cities mobile">
+        <div class="row" style="background-color: white">
+            <br>
+            <span style="text-align: left;font-size: 30px;background-color: white;border: none" class="wow wow zoomInUp" data-wow-duration="1s" data-wow-delay="0.2s">Bài nổi bật</span>
+
+
+            <div class="col-md-12" style="text-align: center; padding-top: 20px;background-color: white">
+                <div class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
+                    <img src="~/Image/baidang1.jpg" style="border-radius: 5px;width: 290px" class="img-responsive">
+                    <h4 style="text-align: left;">107 Chung cư time city, Nguyễn Trãi, Hà Nội</h4>
+                    <p style="text-align: left;margin-top: -10px">Giá thuê: 23 triệu một tháng</p>
+                    <div style="text-align: left;margin-top: -10px"><i style="color: #31708f;padding-right: 0px" class="fa fa-star" aria-hidden="true"></i><i style="color: #31708f;padding-right: 0px" class="fa fa-star" aria-hidden="true"></i><i style="color: #31708f;padding-right: 0px" class="fa fa-star" aria-hidden="true"></i><i style="color: #31708f;padding-right: 0px" class="fa fa-star" aria-hidden="true"></i><i style="color: #31708f;padding-right: 0px" class="fa fa-star" aria-hidden="true"></i><i style="color: #31708f;padding-right: 0px" class="fa fa-star" aria-hidden="true"></i>6</div>
+                </div>
+            </div>
+            <div class="col-md-12" style="text-align: center">
+                <div class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+                    <img src="~/Image/baidang2.jpg" style="border-radius: 5px;width: 290px" class="img-responsive">
+                    <h4 style="text-align: left;">207 Chung cư time city, Nguyễn Trãi, Hà Nội</h4>
+                    <p style="text-align: left;margin-top: -10px">Giá thuê: 30 triệu một tháng</p>
+                    <div style="text-align: left;margin-top: -10px"><i style="color: #31708f;padding-right: 0px" class="fa fa-star" aria-hidden="true"></i><i style="color: #31708f;padding-right: 0px" class="fa fa-star" aria-hidden="true"></i><i style="color: #31708f;padding-right: 0px" class="fa fa-star" aria-hidden="true"></i><i style="color: #31708f;padding-right: 0px" class="fa fa-star" aria-hidden="true"></i><i style="color: #31708f;padding-right: 0px" class="fa fa-star" aria-hidden="true"></i><i style="color: #31708f;padding-right: 0px" class="fa fa-star" aria-hidden="true"></i><i style="color: #31708f;padding-right: 0px" class="fa fa-star" aria-hidden="true"></i><i style="color: #31708f;padding-right: 0px" class="fa fa-star" aria-hidden="true"></i>8</div>
+                </div>
+            </div>
+            <div class="col-md-12" style="text-align: center">
+                <div class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s">
+                    <img src="~/Image/baidang3.jpg" style="border-radius: 5px;width: 290px " class="img-responsive">
+                    <h4 style="text-align: left;">107 Phố Huế, Hai Bà Trưng, Hà Nội</h4>
+                    <p style="text-align: left;margin-top: -10px">Giá thuê: 23 triệu một tháng</p>
+                    <div style="text-align: left;margin-top: -10px"><i style="color: #31708f;padding-right: 0px" class="fa fa-star" aria-hidden="true"></i><i style="color: #31708f;padding-right: 0px" class="fa fa-star" aria-hidden="true"></i><i style="color: #31708f;padding-right: 0px" class="fa fa-star" aria-hidden="true"></i><i style="color: #31708f;padding-right: 0px" class="fa fa-star" aria-hidden="true"></i><i style="color: #31708f;padding-right: 0px" class="fa fa-star" aria-hidden="true"></i>5</div>
+                </div>
+            </div>
+            <div class="col-md-12" style="text-align: center">
+                <div class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
+                    <img src="~/Image/baidang4.jpg" style="border-radius: 5px; width: 290px" class="img-responsive">
+                    <h4 style="text-align: left;">207 Hoàng Quốc Việt, Cầu Giấy, Hà Nội</h4>
+                    <p style="text-align: left;margin-top: -10px">Giá thuê: 23 triệu một tháng</p>
+                    <div style="text-align: left;margin-top: -10px"><i style="color: #31708f;padding-right: 0px" class="fa fa-star" aria-hidden="true"></i><i style="color: #31708f;padding-right: 0px" class="fa fa-star" aria-hidden="true"></i><i style="color: #31708f;padding-right: 0px" class="fa fa-star" aria-hidden="true"></i>3</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="noti3">
+        <div class="container featured-cities mobile">
+
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="~/Image/t1.jpg" style="border-radius:50%">
+                        <br>
+                        <i class="fa fa-quote-right" aria-hidden="true" style="color: black"></i>
+                        <h5>Tôi vừa mới đến Việt Nam, dự định sẽ ở đây lâu dài trong thời gian</h5> <h5>sắp tới và đang cần thuê một căn hộ. Thật may mắn khi được ban bè giới thiệu đến Myhouse, tôi đã thuê được căn nhà ưng ý chỉ trong thời gian ngắn.</h5>
+                        <h5 style="font-weight:bolder;">Jack Vũ</h5>
+                        <br>
+                        <br>
+                        <br>
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="~/Image/t2.jpg" style="border-radius:50%">
+                        <br>
+                        <h5>Đây là địa chỉ thuê nhà ưu thích của tôi. Do tính chất của công việc</h5> <h5>
+                            hay phải di chuyển nhiều
+                            nên tôi thường xuyên sử dụng dịch vụ của Myhouse và tôi cảm thấy rất hài lòng với phong cách chuyên nghiệp của công ty.<i class="fa fa-quote-right" aria-hidden="true" style="color: black"></i>
+                        </h5>
+                        <h5 style="font-weight:bolder;">Peter S. Kim</h5>
+                        <br>
+                        <br>
+                        <br>
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="~/Image/t3.jpg" style="border-radius:50%">
+                        <br>
+                        <h5>Là một người đã sinh sống và làm việc ở Việt Nam nhiều năm,</h5> <h5> cũng đã dùng thử dịch vụ của nhiều trang web thuê phòng khác, tôi đánh giá cao vinahome.com bởi thái độ chuyên nghiệp và nhiệt tình của đội ngũ nhân viên công ty.<i class="fa fa-quote-right" aria-hidden="true" style="color: black"></i></h5>
+                        <h5 style="font-weight:bolder;">Thomas Hải</h5>
+                        <br>
+                        <br>
+                        <br>
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="noti5">
+
+        <div class="container featured-cities mobile">
+            <h3 class="wow zoomInUp" data-wow-duration="1s" data-wow-delay="0.2s">Đối tác của chúng tôi</h3>
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <div class="row">
+                            <div class="col-sm-3 hanoi" data-wow-duration="1s" data-wow-delay="0.2s" style="text-align: center;">
+                                <img src="~/Image/doitac1.jpg">
+                            </div>
+                        </div>
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-sm-3" style="text-align: center;">
+                                <img src="~/Image/doitac2.jpg">
+                            </div>
+
+                        </div>
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-sm-3" style="text-align: center;">
+                                <img src="~/Image/doitac3.png">
+                            </div>
+                        </div>
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-sm-3" style="text-align: center;">
+                                <img src="~/Image/doitac4.png">
+                            </div>
+
+                        </div>
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-sm-3" style="text-align: center;">
+                                <img src="~/Image/doitac5.png">
+                            </div>
+
+                        </div>
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-sm-3" style="text-align: center;">
+                                <img src="~/Image/doitac6.png">
+                            </div>
+
+                        </div>
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container featured-cities mobile" style="background-image: url(~/Image/bg_partner.jpg);">
+        <h4 style="text-align: center; padding-top: 10px; margin-bottom: 30px; font-size: 30px">Đăng ký nhận tin</h4>
+        <div class="row">
+            <div class="col-sm-12 saigon" style="text-align: center; font-size: 20px;">
+                <input type="email" name="email" class="input-text" placeholder="Email của bạn" style="padding-left: 10px; width: 200px"><button>Gửi đi</button>
+            </div>
+        </div>
+    </div>
+    <!--Hết viết cho điện thoại-->
+    <!--Hết viết cho điện thoại-->
+    <!--Hết viết cho điện thoại-->
+    <!--Hết viết cho điện thoại-->
+    <!--Hết viết cho điện thoại-->
+
+
+
+
+    <div class="noti4">
+        <div class="notice desktop">
+            <div class="container featured-cities desktop">
+                <span style="text-align: left;font-size: 30px" class="wow wow zoomInUp" data-wow-duration="1s" data-wow-delay="0.2s">Bài nổi bật</span>
+                <a href="file2.html" style="color: black;font-weight: 500;"><span style="float: right;padding-top: 15px" id="xem">Xem thêm</span></a>
+                <div class="row">
+                    @Html.Action("NewHousePartial", "Home");
+                </div>
+            </div>
+        </div>
+    </div>
+    @Html.Action("AdvertPartial", "Home");
+    <div class="noti" style="background-color: #ddd">
+        <div class="container footer">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="z">
+                        <h4>Thông tin công ty</h4>
+                    </div>
+
+                    <p style="margin: 0 "><a href="" style="text-transform: none;margin: 0 0 10px;font-weight: normal;color: #333;padding: 0;">Văn hóa công ty</a></p>
+                    <p style="margin: 0 "><a href="" style="text-transform: none; margin: 0 0 10px; font-weight: normal; color: #333; padding: 0; ">Triết lý kinh doanh</a></p>
+                    <p style="margin: 0 "><a href="#" style="text-transform: none; margin: 0 0 10px; font-weight: normal; color: #333; padding: 0; ">Tuyển dụng</a></p>
+
+                </div>
+                <div class="col-sm-3">
+                    <div class="z">
+                        <h4 style="font-size: 20px">Chính sách và quy định</h4>
+                    </div>
+                    <p style="margin: 0 "><a href="#" style="text-transform: none; margin: 0 0 10px; font-weight: normal; color: #333; padding: 0; ">Hướng dẫn đăng tin</a></p>
+                    <p style="margin: 0 "><a href="#" style="text-transform: none; margin: 0 0 10px; font-weight: normal; color: #333; padding: 0; ">Chính sách và quy định</a></p>
+                    <p style="margin: 0 "><a href="#" style="text-transform: none; margin: 0 0 10px; font-weight: normal; color: #333; padding: 0;">Câu hỏi thường gặp</a></p>
+
+                </div>
+                <div class="col-sm-3">
+                    <div class="z">
+                        <h4 style="font-size: 20px">Liên hệ</h4>
+                    </div>
+                    <p><i style="color:black" class="fa fa-map-marker" aria-hidden="true"></i>Địa chỉ: 107 Hoàng Mai, Hà Nội</p>
+                    <p><i style="color:black" class="fa fa-phone" aria-hidden="true"></i>Số điện thoại: 01254565478</p>
+                    <p><i style="color:black" class="fa fa-envelope" aria-hidden="true"></i>Email: myhome@gmail.com</p>
+                </div>
+                <div class="col-sm-3">
+                    <div class="z">
+                        <h4 style="font-size: 20px">Thanh toán</h4>
+                    </div>
+                    <img src="~/Image/visa.png">
+                    <img src="~/Image/mas.png">
+                    <img src="~/Image/ame.png">
+                    <img src="~/Image/Bitcoin1.png">
+                </div>
+            </div>
+        </div>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">
+            <i class="fa fa-angle-double-up" aria-hidden="true" style="width: 7px"></i>
+        </button>
+        <div style="padding-bottom: 35px;text-align: center;padding-top: 20px;">
+            <i style="font-size: 25px;color: #286090" class="fa fa-facebook-square" aria-hidden="true"></i>
+            <i style="font-size: 25px;color: #286090" class="fa fa-google-plus-square" aria-hidden="true"></i>
+            <i style="font-size: 25px;color: #286090" class="fa fa-instagram" aria-hidden="true"></i>
+            <i style="font-size: 25px;color: #286090" class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </div>
+    </div>
+
+    <div class="col-sm-12" style="height: 45px;text-align: center;background-color: white;margin-bottom: -100px">
+        <h5 style="padding-top: 5px;" class="wow zoomInUp" data-wow-duration="1s" data-wow-delay="0.2s">Copyright 2017  Designed by Vuhai</h5>
+    </div>
+
+    <div class="modal fade" id="sign-up" role="dialog">
+        <div class="modal-dialog">
+            <div class="sign-up">
+                <h2>Đăng ký</h2>
+                <div class="sign-up-facebook">
+                    <i class="fa fa-facebook"></i>
+                    <span>Đăng ký bằng Facebook</span>
+                </div>
+                <div class="sign-up-google">
+                    <i class="fa fa-google" aria-hidden="true"></i>
+                    <span>Đăng ký bằng Google</span>
+                </div>
+                <p>Hoặc</p>
+                <form>
+                    <div>
+                        <input class="email" type="Email" placeholder="Email" name="email" required>
+                    </div>
+                    <div>
+                        <input class="password" id="password-signup" type="password" placeholder="Mật khẩu">
+                    </div>
+
+                    <div>
+                        <input class="hoten" type="text" placeholder="Họ và tên" name="name" required>
+                    </div>
+                    <div>
+                        <input class="sodienthoai" type="text" placeholder="Số điện thoại" name="mobile" required>
+                    </div>
+                    <div>
+                        <input class="submit" type="submit" value="Đăng ký">
+                    </div>
+                    <p>Bằng cách nhấp vào Đăng ký, bạn đã đồng ý với các <a href="#">Quy định</a> của chúng tôi.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="sign-in" role="dialog">
+        <div class="modal-dialog">
+            <div class="sign-in">
+                <h2>Đăng nhập</h2>
+                <div class="sign-in-facebook">
+                    <i class="fa fa-facebook"></i>
+                    <span>Đăng nhập bằng Facebook</span>
+                </div>
+                <div class="sign-in-google">
+                    <i class="fa fa-google" aria-hidden="true"></i>
+                    <span>Đăng nhập bằng Google</span>
+                </div>
+                <p>Hoặc</p>
+                <form>
+                    <div>
+                        <input class="email" type="Email" placeholder="" name="email" value="vuhai8888v@gmail.com">
+                    </div>
+                    <div>
+                        <input class="password" type="password" placeholder="" name="pass" value="123456789">
+                    </div>
+                    <div style="text-align: left;">
+                        <input class="nho-mk" id="nho-mk" type="checkbox">
+                        <label for="nho-mk">Ghi nhớ mật khẩu</label>
+                    </div>
+                    <div>
+                        <input class="submit" type="submit" value="Đăng nhập">
+                    </div>
+                </form>
+                <p>Bạn chưa có tài khoản? <a href="#" class="taotaikhoan">Tạo tài khoản</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/Scripts/js/jquery-3.2.0.min.js"></script>
+    <script src="~/Scripts/js/bootstrap.min.js"></script>
+    <script src="~/Scripts/js/script.js"></script>
+    <script src="~/Scripts/js/wow.min.js"></script>
+    <script>new WOW().init();</script>
+    <script src="~/Scripts/js/map2.js"></script>
+</body>
+</html>

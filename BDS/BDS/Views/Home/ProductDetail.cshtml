@@ -1,0 +1,193 @@
+﻿@{
+    Layout = "~/Views/Shared/ProductDetailLayout.cshtml";
+}
+@using BDS.Models;
+@model House
+
+
+<div class="block-left">
+    <div class="row header">
+        <div class="col-sm-12">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="@Model.Image.Image1">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="@Model.Image.Image1">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="@Model.Image.Image1">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                </div>
+                <!-- Controls -->
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active"><a href="#home" role="tab" data-toggle="tab">Thông tin chung</a></li>
+        <li><a href="#profile" role="tab" data-toggle="tab">Mô tả chi tiết</a></li>
+        <li><a href="#messages" role="tab" data-toggle="tab">Tiện tích</a></li>
+        <li><a href="#settings" role="tab" data-toggle="tab">Vị trí</a></li>
+        <li><a href="#settings1" role="tab" data-toggle="tab">Ảnh 360</a></li>
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div class="tab-pane active" id="home">
+            <br>
+
+
+            <table id="detail-item1" class="table table-bordered">
+                <tbody>
+                    <tr>
+                        <th>Địa chỉ</th>
+                        <td colspan="3">@Model.Address</td>
+                    </tr>
+                    <tr>
+                        <th>Hình thức</th>
+                        <td>@Model.Type</td>
+                        <th>Ngày đăng</th>
+                        <td>20/05/2017</td>
+                    </tr>
+                    <tr>
+                        <th>Chủ sỡ hữu</th>
+                        <td>@Model.Owner</td>
+                        <th>Điện thoại</th>
+                        <td>@Model.PhoneNumber</td>
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                        <td>vuminh@gmail.com</td>
+                        <th>Tình trạng</th>
+                        <td style="color: red">Phòng trống</td>
+                    </tr>
+                    <tr>
+                        <th>Diện tích</th>
+                        <td>@Model.Acreage m²</td>
+                        <th>Giá cho thuê</th>
+                        <td>@String.Format("{0:0,0}", @Model.Price)đ/tháng</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="tab-pane" id="profile">
+            <br>
+            <p>@Model.Description</p>
+            <p style="color: blue">Cho thuê chung cư tại Tòa P5 Park Hill, Mai Động, quận Hoàng Mai, Tp. Hà Nội.<p>Nội Thất được trang bị đầy đủ đáp ứng sinh hoạt của khách hàng bao gồm: Tivi, tủ lạnh, máy giặt, lò vi sóng, giường, chăn, ga, gối, đệm, sofa, bàn ăn, điều hòa, đèn chùm, nước nóng trung tâm, sàn gỗ, khóa vân tay, chuông camera, bếp điện hồng ngoại, máy hút mùi, hệ thống tủ bếp, vách tắm đứng, bồn tắm, tủ quần áo âm tường...</p>
+            <p>Thiết kế: 1 phòng ngủ, 1 vệ sinh, 1 phòng khách và bếp.</p>
+            <p>Miễn phí dịch vụ quản lý căn hộ 10 năm.</p>
+            <p>Tất cả giao dịch được ghi trên giấy tờ, hợp đồng minh bạch đảm bảo quyền lợi công bằng cho hai bên.</p>
+            <p>Tiện ích, hạ tầng mang tiêu chuẩn quốc tế của toàn khu như: Hệ thống trường học chất lượng cao; Bệnh viên Đa khoa Quốc tế; Trung tâm thương mại; dịch vụ lễ tân, an ninh an toàn 24/7 cho đến hệ thống dịch vụ tại gia đẳng cấp như: dịch vụ dọn dẹp, giặt là, dịch vụ sửa chữa…</p>
+        </div>
+        <div class="tab-pane" id="messages">
+            <div class="row tienich">
+                <br>
+                <div class="col-sm-4">
+                    <p><i class="fa fa-check-square-o" aria-hidden="true"></i> Phòng tập gym</p>
+                    <p><i class="fa fa-check-square-o" aria-hidden="true"></i> Thang máy</p>
+                    <p><i class="fa fa-check-square-o" aria-hidden="true"></i> Truyền hình cáp</p>
+                    <p><i class="fa fa-check-square-o" aria-hidden="true"></i> Siêu thị</p>
+                </div>
+                <div class="col-sm-4">
+                    <p><i class="fa fa-check-square-o" aria-hidden="true"></i> Internet</p>
+                    <p><i class="fa fa-check-square-o" aria-hidden="true"></i> Phòng khép kín</p>
+                    <p><i class="fa fa-check-square-o" aria-hidden="true"></i> Điều hòa</p>
+                    <p><i class="fa fa-check-square-o" aria-hidden="true"></i> Phòng ngủ</p>
+                </div>
+                <div class="col-sm-4">
+                    <p><i class="fa fa-check-square-o" aria-hidden="true"></i> Nóng lạnh</p>
+                    <p><i class="fa fa-check-square-o" aria-hidden="true"></i> Chỗ để xe</p>
+                    <p><i class="fa fa-check-square-o" aria-hidden="true"></i> Bảo vệ trực an ninh 24/24</p>
+                    <p><i class="fa fa-check-square-o" aria-hidden="true"></i> Phòng khách</p>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="settings">
+            <br>
+            <div id="map">
+                <!-- Khu vực nhúng link google máp Model.Map -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!
+            1d3723.8977453149246!2d105.83245751424809!3d21.036777085994046!
+            2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!
+            1s0x3135aba15ec15d17%3A0x620e85c2cfe14d4c!2zTMSDbmcgSOG7kyBDaMOtIE1pbmg!
+            5e0!3m2!1svi!2sus!4v1501056274257" width="775" height="450" frameborder="0" style="border:0"></iframe>
+            </div>
+        </div>
+        <div class="tab-pane" id="settings1">
+            <br>
+            <!-- Khu này nhúng linh ảnh 360 Model.Anh360  -->
+            <iframe width="775" height="450" src="https://EyeSpy360.vr-360-tour.com/e/CwcBXpfqxcA/e?initvars.autorotate.enabled=true"></iframe>
+
+
+        </div>
+    </div>
+    <h3 style="padding-top: 30px">3 Bình Luận</h3>
+
+    <!-- Season Comment -->
+    <div style="padding-top: 20px">
+        <div class="col-md-2"><img src="../Image/content-testimonials-2.png" style="width: 80px;height: 80px"></div>
+        <div class="col-md-10">
+            <span style="font-weight: normal;font-size: 20px">Jessica Nguyễn</span>
+            <p>Căn hộ đẹp quá, gửi cho tôi thông tin chi tiết về giá thuê căn hộ này nhé, tôi sẽ liên hệ lại với các bạn.</p>
+            <a href="#"><p style="padding-top: 10px">Trả lời</p></a>
+        </div>
+    </div>
+
+    <div class="col-sm-2"><img src="../Image/content-testimonials-1.png" style="width: 80px;height: 80px"></div>
+    <div class="col-sm-10">
+        <p style="font-weight: normal; font-size: 20px">John Doe</p>
+        <p>Tôi đang cần thuê nhà gấp, gửi giúp tôi thông tin chi tiết về căn hộ này</p>
+        <a href="#"><p style="padding-top: 10px">Trả lời</p></a>
+    </div>
+
+    <div class="col-md-2"><img src="../Image/content-testimonials-6.png" style="width: 80px;height: 80px"></div>
+    <div class="col-md-10">
+        <p style="font-weight: normal; font-size: 20px">Petter Pan</p>
+        <p>Tôi đang cần thuê gấp một căn hộ gần trung tâm, liên lạc lại giúp tôi.</p>
+        <a href="#"><p style="padding-top: 10px">Trả lời</p></a>
+    </div>
+
+    <div class="row content" style="margin-top: -30px">
+        <div class="col-sm-12">
+            <div class="noidung">
+                <h4 class="title">Gửi bình luận</h4>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form">
+                <input type="email" name="email" class="input-text" placeholder="Email của bạn">
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form">
+                <input type="email" name="email" class="input-text" placeholder="Tên của bạn">
+            </div>
+        </div>
+        <br /><br />
+        <div class="col-sm-12">
+            <div class="form-group">
+                <textarea class="form-control" rows="5" id="comment" placeholder="Đăng bình luận của bạn"></textarea>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <button style="background-color: #2f7ec1;color: white">Bình luận</button>
+        </div>
+
+    </div>
+</div>
+}
